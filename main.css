@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+h1 {
+    margin-left: 2rem;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #000000;
+    color: white;
+    padding: 1rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+nav a:hover {
+    color: #ddd;
+    transform: scale(1.2);
+}
+
+main {
+    margin-top: 100px;
+    padding: 20px;
+}
+
+#about, #pictures, #videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    scroll-margin-top: 100px;
+}
+
+#about h2, #pictures h2, #videos h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.about-content {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2),
+                0 0 60px rgba(255, 255, 255, 0.1);
+}
+
+.about-content p {
+    color: white;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.count {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.content-box {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2),
+                0 0 60px rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+}
+
+.video-item, .picture-item {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.video-item video, .picture-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.description {
+    color: white;
+    font-size: 1rem;
+    margin-top: 15px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+#snow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.snowflake {
+    position: fixed;
+    background: #fff;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+}
