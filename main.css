@@ -133,6 +133,21 @@ main {
     text-align: center;
 }
 
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 #snow {
     position: fixed;
     top: 0;
